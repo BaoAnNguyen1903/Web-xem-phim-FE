@@ -17,6 +17,8 @@ import UuDai from "./pages/uu-dai/uuDai";
 import QuaMungLenHangUuDai from "./pages/uu-dai/quaMungLenHangUuDai";
 import QuaTangSinhNhatThanhVien from "./pages/uu-dai/quaTangSinhNhatThanhVien";
 import UuDaiVNPayQr from "./pages/uu-dai/uuDaiVNPayQr";
+import TinTucPhim from "./pages/tin-tuc-phim/tinTucPhim";
+import HuongDanKhuVucGuiXe from "./pages/tin-tuc-phim/huongDanKhuVucGuiXe";
 
 const router = createBrowserRouter([
   {
@@ -27,66 +29,76 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/lich-chieu-phim",
         element: <LichChieu />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/phim-dang-chieu",
         element: <PhimDangChieu />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/phim-sap-chieu",
         element: <PhimSapChieu />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/uu-dai",
         element: <UuDai />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/qua-mung-len-hang-uu-dai-thanh-vien",
         element: <QuaMungLenHangUuDai />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/qua-tang-sinh-nhat-thanh-vien",
         element: <QuaTangSinhNhatThanhVien />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/xem-phim-metiz-thoa-thich-cung-uu-dai-sieu-hoi-tu-vnpay-qr",
         element: <UuDaiVNPayQr />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
       {
         path: "/super-monday-thu-hai-sieu-hang",
         element: <UuDaiVNPayQr />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />
       },
+      {
+        path: "/tin-tuc-phim",
+        element: <TinTucPhim />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: "/huong-dan-loi-vao-khu-vuc-giu-xe",
+        element: <HuongDanKhuVucGuiXe />,
+        errorElement: <ErrorPage />
+      }
 
       // {
       //   path: "/books",
       //   element: <PrivateRoute>{/* <BookPage /> */}</PrivateRoute>,
       //   errorElement: <ErrorPage />,
       // },
-    ],
+    ]
   },
   {
     path: "/login",
     element: <LoginPage />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/register",
     element: <RegisterPage />,
-    errorElement: <ErrorPage />,
-  },
+    errorElement: <ErrorPage />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
