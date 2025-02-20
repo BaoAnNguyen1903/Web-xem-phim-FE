@@ -5,7 +5,7 @@ import {
   LoginOutlined,
   HomeOutlined,
   AuditOutlined,
-  AliwangwangOutlined,
+  AliwangwangOutlined
 } from "@ant-design/icons";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/auth.context";
@@ -25,7 +25,7 @@ const Header = () => {
         fullName: "",
         role: "",
         avatar: "",
-        id: "",
+        id: ""
       });
       message.success("logout thanh cong");
       navigate("/");
@@ -45,7 +45,7 @@ const Header = () => {
         </Link>
       ),
       key: "home",
-      icon: <HomeOutlined />,
+      icon: <HomeOutlined />
     },
     {
       label: (
@@ -54,7 +54,7 @@ const Header = () => {
         </Link>
       ),
       key: "users",
-      icon: <UsergroupAddOutlined />,
+      icon: <UsergroupAddOutlined />
     },
     {
       label: (
@@ -63,7 +63,7 @@ const Header = () => {
         </Link>
       ),
       key: "books",
-      icon: <AuditOutlined />,
+      icon: <AuditOutlined />
     },
 
     ...(!user.id // nếu không co user.id thì in ra nút login
@@ -75,8 +75,8 @@ const Header = () => {
               </Link>
             ),
             key: "login",
-            icon: <LoginOutlined />,
-          },
+            icon: <LoginOutlined />
+          }
         ]
       : []),
 
@@ -89,20 +89,14 @@ const Header = () => {
             children: [
               {
                 label: <span onClick={() => handleLogout()}>dang xuat</span>,
-                key: "logout",
-              },
-            ],
-          },
+                key: "logout"
+              }
+            ]
+          }
         ]
-      : []),
+      : [])
   ];
   return (
-    // <ul>
-    //     <li><NavLink to="/">Home</NavLink></li>
-    //     <li><NavLink to="/login">Login</NavLink></li>
-    //     <li><NavLink to="/user">User</NavLink></li>
-    // </ul>
-
     <Menu
       onClick={onClick}
       selectedKeys={[current]}

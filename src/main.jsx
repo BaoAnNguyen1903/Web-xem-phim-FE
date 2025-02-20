@@ -19,6 +19,7 @@ import QuaTangSinhNhatThanhVien from "./pages/uu-dai/quaTangSinhNhatThanhVien";
 import UuDaiVNPayQr from "./pages/uu-dai/uuDaiVNPayQr";
 import TinTucPhim from "./pages/tin-tuc-phim/tinTucPhim";
 import HuongDanKhuVucGuiXe from "./pages/tin-tuc-phim/huongDanKhuVucGuiXe";
+import QuyDinhRapPhim from "./pages/tin-tuc-phim/quyDinhRapPhim";
 
 const router = createBrowserRouter([
   {
@@ -80,7 +81,17 @@ const router = createBrowserRouter([
         path: "/huong-dan-loi-vao-khu-vuc-giu-xe",
         element: <HuongDanKhuVucGuiXe />,
         errorElement: <ErrorPage />
-      }
+      },
+      {
+        path: "/nhung-quy-dinh-tai-rap-phim",
+        element: <QuyDinhRapPhim />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: "/nhung-quy-dinh-tai-rap-phim",
+        element: <QuyDinhRapPhim />,
+        errorElement: <ErrorPage />
+      },
 
       // {
       //   path: "/books",
