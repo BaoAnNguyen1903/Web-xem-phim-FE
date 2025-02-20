@@ -6,7 +6,7 @@ import LoginPage from "./pages/login";
 import RegisterPage from "./pages/register";
 import "./styles/global.css";
 import { AuthWrapper } from "./components/context/auth.context";
-import PrivateRoute from "./pages/private.route";
+// import PrivateRoute from "./pages/private.route";
 import Home from "./pages/home";
 import ErrorPage from "./pages/error";
 import App from "./App";
@@ -15,6 +15,8 @@ import PhimDangChieu from "./pages/phimDangChieu";
 import PhimSapChieu from "./pages/phimSapChieu";
 import UuDai from "./pages/uu-dai/uuDai";
 import QuaMungLenHangUuDai from "./pages/uu-dai/quaMungLenHangUuDai";
+import QuaTangSinhNhatThanhVien from "./pages/uu-dai/quaTangSinhNhatThanhVien";
+import UuDaiVNPayQr from "./pages/uu-dai/uuDaiVNPayQr";
 
 const router = createBrowserRouter([
   {
@@ -53,29 +55,26 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "/books",
-        element: (
-          <PrivateRoute>
-            <BookPage />
-          </PrivateRoute>
-        ),
+        path: "/qua-tang-sinh-nhat-thanh-vien",
+        element: <QuaTangSinhNhatThanhVien />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/lich-chieu-phim",
-        element: <div>lich chieu phim</div>,
+        path: "/xem-phim-metiz-thoa-thich-cung-uu-dai-sieu-hoi-tu-vnpay-qr",
+        element: <UuDaiVNPayQr />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/phim-dang-chieu",
-        element: <div>phim dang chieu</div>,
+        path: "/super-monday-thu-hai-sieu-hang",
+        element: <UuDaiVNPayQr />,
         errorElement: <ErrorPage />,
       },
-      {
-        path: "/phim-sap-chieu",
-        element: <div>phim sap chieu</div>,
-        errorElement: <ErrorPage />,
-      },
+
+      // {
+      //   path: "/books",
+      //   element: <PrivateRoute>{/* <BookPage /> */}</PrivateRoute>,
+      //   errorElement: <ErrorPage />,
+      // },
     ],
   },
   {
