@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../components/context/auth.context";
-import { Navigate, Link, useRouteError } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button, Result } from "antd";
 
 const PrivateRoute = (props) => {

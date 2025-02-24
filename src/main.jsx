@@ -7,7 +7,6 @@ import RegisterPage from "./pages/auth/register";
 import "./styles/global.css";
 import { AuthWrapper } from "./components/context/auth.context";
 // import PrivateRoute from "./pages/private.route";
-import Home from "./pages/home";
 import ErrorPage from "./pages/error";
 import App from "./App";
 import LichChieu from "./pages/header/lich-chieu/lichChieu";
@@ -31,7 +30,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <div>home page child</div>,
         errorElement: <ErrorPage />
       },
       {
