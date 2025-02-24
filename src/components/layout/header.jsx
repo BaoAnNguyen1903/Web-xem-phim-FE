@@ -113,7 +113,7 @@ const Header = () => {
         {
           label: (
             <Link style={{ textDecoration: "none" }} to={"/quyen-loi"}>
-              QUYỀN LỢILỢI
+              QUYỀN LỢI
             </Link>
           ),
           key: "quyen-loi"
