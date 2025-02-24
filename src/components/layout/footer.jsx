@@ -3,6 +3,7 @@ import {
   InstagramOutlined,
   YoutubeOutlined
 } from "@ant-design/icons";
+import "./footer.css";
 
 const Footer = () => {
   return (
@@ -56,7 +57,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div></div>
+      <div>
+        <p>MỘT SẢN PHẨM ĐẾN TỪ ÂN NGUYỄN, ANNDB2.</p>
+        <img src="" alt="" />
+        <p>BẢN QUYỀN © 2025 ÂN NGUYỄN CINEMA</p>
+      </div>
     </>
   );
 };
