@@ -53,11 +53,11 @@ const router = createBrowserRouter([
         element: <UuDai />,
         errorElement: <ErrorPage />
       },
-      // {
-      //   path: "/qua-mung-len-hang-uu-dai-thanh-vien",
-      //   element: <QuaMungLenHangUuDai />,
-      //   errorElement: <ErrorPage />
-      // },
+      {
+        path: "/qua-mung-len-hang-uu-dai-thanh-vien",
+        element: <QuaMungLenHangUuDai />,
+        errorElement: <ErrorPage />
+      },
       {
         path: "/qua-tang-sinh-nhat-thanh-vien",
         element: <QuaTangSinhNhatThanhVien />,
@@ -119,11 +119,6 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <RegisterPage />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: "/qua-mung-len-hang-uu-dai-thanh-vien",
-    element: <QuaMungLenHangUuDai />,
     errorElement: <ErrorPage />
   }
 ]);
