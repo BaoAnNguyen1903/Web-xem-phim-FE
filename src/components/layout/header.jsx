@@ -1,11 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, message } from "antd";
 import {
-  UsergroupAddOutlined,
   LoginOutlined,
+  AliwangwangOutlined,
+  ScheduleOutlined,
   HomeOutlined,
-  AuditOutlined,
-  AliwangwangOutlined
+  GiftOutlined,
+  PlayCircleOutlined,
+  UserOutlined
 } from "@ant-design/icons";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/auth.context";
@@ -41,7 +43,7 @@ const Header = () => {
     {
       label: (
         <Link style={{ textDecoration: "none" }} to={"/"}>
-          Home
+          HOME
         </Link>
       ),
       key: "home",
@@ -49,21 +51,74 @@ const Header = () => {
     },
     {
       label: (
-        <Link style={{ textDecoration: "none" }} to={"/users"}>
-          Users
+        <Link style={{ textDecoration: "none" }} to={"/lich-chieu"}>
+          LỊCH CHIẾU
         </Link>
       ),
-      key: "users",
-      icon: <UsergroupAddOutlined />
+      key: "lich-chieu",
+      icon: <ScheduleOutlined />
+    },
+    {
+      label: "PHIM",
+      icon: <PlayCircleOutlined />,
+      children: [
+        {
+          label: (
+            <Link style={{ textDecoration: "none" }} to={"/phim-dang-chieu"}>
+              PHIM ĐANG CHIẾU
+            </Link>
+          ),
+          key: "phim-dang-chieu"
+        },
+        {
+          label: (
+            <Link style={{ textDecoration: "none" }} to={"/phim-sap-chieu"}>
+              PHIM SẮP CHIẾU
+            </Link>
+          ),
+          key: "phim-sap-chieu"
+        }
+      ]
     },
     {
       label: (
-        <Link style={{ textDecoration: "none" }} to={"/books"}>
-          Books
+        <Link style={{ textDecoration: "none" }} to={"/uu-dai"}>
+          ƯU ĐÃI
         </Link>
       ),
-      key: "books",
-      icon: <AuditOutlined />
+      key: "uu-dai",
+      icon: <GiftOutlined />
+    },
+    {
+      label: (
+        <Link style={{ textDecoration: "none" }} to={"/tin-tuc-phim"}>
+          TIN TỨC PHIM
+        </Link>
+      ),
+      key: "tin-tuc-phim",
+      icon: <GiftOutlined />
+    },
+    {
+      label: "THÀNH VIÊN",
+      icon: <UserOutlined />,
+      children: [
+        {
+          label: (
+            <Link style={{ textDecoration: "none" }} to={"/tai-khoan"}>
+              TÀI KHOẢN
+            </Link>
+          ),
+          key: "tai-khoan"
+        },
+        {
+          label: (
+            <Link style={{ textDecoration: "none" }} to={"/quyen-loi"}>
+              QUYỀN LỢILỢI
+            </Link>
+          ),
+          key: "quyen-loi"
+        }
+      ]
     },
 
     ...(!user.id // nếu không co user.id thì in ra nút login
@@ -107,4 +162,3 @@ const Header = () => {
 };
 
 export default Header;
-//ân ăn cứtcứt
