@@ -5,7 +5,7 @@ const QuaMungLenHangUuDai = () => {
   return (
     <div className="container">
       <div className="left">
-        <img src="/images/img-len-hang.png" alt="Ưu đãi Ân Nguyễn" />
+        <img src="/images/img-len-hang.png" />
       </div>
 
       <div className="right">

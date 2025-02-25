@@ -19,6 +19,12 @@
     height: auto;
     border-radius: 10px;
 }
+
+.other img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
   
 .right {
     padding-left: 30px;
