@@ -1,8 +1,8 @@
 const TinTucPhim = () => {
   return (
-    <>
-      <div>tin tuc phim</div>
-    </>
+    <div>
+      <h1>TIN TỨC PHIM</h1>
+    </div>
   );
 };
 

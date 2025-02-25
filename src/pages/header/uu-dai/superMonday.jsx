@@ -2,12 +2,12 @@ import "./uu-dai-global.css";
 
 const SuperMonday = () => {
   return (
-    <div className="container">
-      <div className="left">
+    <div className="uu-dai-container">
+      <div className="uu-dai-left">
         <img src="/images/img-super-monday.png" />
       </div>
 
-      <div className="right">
+      <div className="uu-dai-right">
         <h2>SUPER MONDAY (THỨ HAI SIÊU HẠNG)</h2>
         <p>
           Hãy đến Metiz Cinema để khởi động{" "}

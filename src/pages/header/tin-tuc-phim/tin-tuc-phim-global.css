@@ -1,0 +1,35 @@
+.tin-tuc-phim-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .tin-tuc-phim-title h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .tin-tuc-phim-content p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  
+  .tin-tuc-phim-content p:first-of-type {
+    font-weight: bold;
+  }
+  
+  .tin-tuc-phim-content p img {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  

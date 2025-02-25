@@ -3,12 +3,12 @@ import "./uu-dai-global.css";
 
 const QuaMungLenHangUuDai = () => {
   return (
-    <div className="container">
-      <div className="left">
+    <div className="uu-dai-container">
+      <div className="uu-dai-left">
         <img src="/images/img-len-hang.png" />
       </div>
 
-      <div className="right">
+      <div className="uu-dai-right">
         <h2>QUÀ MỪNG LÊN HẠNG - ƯU ĐÃI THÀNH VIÊN ÂN NGUYỄN 2025</h2>
         <p>
           Ân Nguyễn Cinema xin chân thành cảm ơn các khách hàng đã đồng hành

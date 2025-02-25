@@ -2,12 +2,12 @@ import "./uu-dai-global.css";
 
 const QuaTangSinhNhatThanhVien = () => {
   return (
-    <div className="container">
-      <div className="left">
+    <div className="uu-dai-container">
+      <div className="uu-dai-left">
         <img src="/images/img-sinh-nhat.png" />
       </div>
 
-      <div className="right">
+      <div className="uu-dai-right">
         <h2>QUÀ TẶNG SINH NHẬT THÀNH VIÊN</h2>
         <p>
           Khi sở hữu thẻ thành viên Metiz, bạn sẽ nhận được quà tặng trong tháng

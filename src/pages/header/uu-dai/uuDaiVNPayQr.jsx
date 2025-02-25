@@ -2,12 +2,12 @@ import "./uu-dai-global.css";
 
 const UuDaiVNPayQr = () => {
   return (
-    <div className="container">
-      <div className="left">
+    <div className="uu-dai-container">
+      <div className="uu-dai-left">
         <img src="/images/img-vnpay.png" />
       </div>
 
-      <div className="right">
+      <div className="uu-dai-right">
         <h2>XEM PHIM ÂN NGUYỄN THỎA THÍCH CÙNG ƯU ĐÃI SIÊU HỜI TỪ VNPAY-QR</h2>
         <p>
           Tháng 9 và 10 này rạp Ân Nguyễn không chỉ có phim hay, bắp ngon mà còn
@@ -37,7 +37,7 @@ const UuDaiVNPayQr = () => {
           Nguyễn Cinema.
         </p>
         <strong>* Hướng dẫn thanh toán bằng VNPAY-QR</strong>
-        <div className="other">
+        <div className="uu-dai-other">
           <img src="/images/img-vnpay2.png" />
         </div>
         <strong>Điều kiện & điều khoản:</strong>
