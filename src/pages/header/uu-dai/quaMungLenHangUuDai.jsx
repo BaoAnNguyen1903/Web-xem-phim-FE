@@ -80,7 +80,13 @@ const QuaMungLenHangUuDai = () => {
           Trong năm 2025, khách hàng Metiz đăng ký tài khoản thành viên tại
           Metiz và có năm sinh từ 2003 trở về sau sẽ là thành viên U22. Điều
           kiện áp dụng cho thành viên U22 xem chi tiết{" "}
-          <Link style={{ textDecoration: "none", color: "red" }}>TẠI ĐÂY</Link>.
+          <Link
+            to={"/khuyen-mai-gia-ve-u22"}
+            style={{ textDecoration: "none", color: "red" }}
+          >
+            TẠI ĐÂY
+          </Link>
+          .
         </p>
         <p>(*) Lưu ý:</p>
         <p>

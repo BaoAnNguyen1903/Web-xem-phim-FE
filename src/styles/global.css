@@ -2,3 +2,14 @@
     margin: 0;
     padding: 0;
 }
+table {
+    margin-bottom: 20px;
+   }
+th, td {
+    border: 1px solid black; /* Viền dày 2px */
+    padding: 5px; /* Khoảng cách bên trong */
+    text-align: left; /* Căn lề trái */
+}
+th {
+    background-color: #f4f4f4; /* Màu nền tiêu đề */
+}

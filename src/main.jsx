@@ -21,6 +21,7 @@ import HuongDanKhuVucGuiXe from "./pages/header/tin-tuc-phim/huongDanKhuVucGuiXe
 import QuyDinhRapPhim from "./pages/header/tin-tuc-phim/quyDinhRapPhim";
 import TaiKhoan from "./pages/header/thanh-vien/taiKhoan";
 import QuyenLoi from "./pages/header/thanh-vien/quyenLoi";
+import KhuyenMaiU22 from "./pages/header/uu-dai/khuyenMaiU22";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,11 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
       },
       {
+        path: "/khuyen-mai-gia-ve-u22",
+        element: <KhuyenMaiU22 />,
+        errorElement: <ErrorPage />
+      },
+      {
         path: "/qua-tang-sinh-nhat-thanh-vien",
         element: <QuaTangSinhNhatThanhVien />,
         errorElement: <ErrorPage />
@@ -81,11 +87,6 @@ const router = createBrowserRouter([
       {
         path: "/huong-dan-loi-vao-khu-vuc-giu-xe",
         element: <HuongDanKhuVucGuiXe />,
-        errorElement: <ErrorPage />
-      },
-      {
-        path: "/nhung-quy-dinh-tai-rap-phim",
-        element: <QuyDinhRapPhim />,
         errorElement: <ErrorPage />
       },
       {

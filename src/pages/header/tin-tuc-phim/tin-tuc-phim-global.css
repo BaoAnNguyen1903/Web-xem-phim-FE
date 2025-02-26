@@ -1,5 +1,5 @@
 .tin-tuc-phim-container {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -20,16 +20,32 @@
     line-height: 1.6;
     margin-bottom: 8px;
   }
+
+  .tin-tuc-phim-content strong {
+    font-size: 25px;
+    text-align: left; /* Căn chữ sát phải */
+    line-height: 1.6;
+    margin-bottom: 8px;
+    display: block; /* Giúp text-align hoạt động đúng */
+}
+
+.tin-tuc-phim-content h3 {
+    font-size: 25px;
+    text-align: left; /* Căn chữ sát phải */
+    line-height: 1.6;
+    margin-bottom: 8px;
+    display: block; /* Giúp text-align hoạt động đúng */
+}
+
   
   .tin-tuc-phim-content p:first-of-type {
     font-weight: bold;
   }
   
-  .tin-tuc-phim-content p img {
+  .tin-tuc-phim-content img {
     width: 100%;
     max-width: 800px;
-    margin-top: 15px;
+    margin: 15px auto 30px; /* Trên 15px, dưới 30px, căn giữa ngang */
     border-radius: 10px;
-    margin-bottom: 30px;
-  }
-  
+    display: block; /* Giúp margin auto hoạt động */
+}
