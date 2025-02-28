@@ -9,7 +9,6 @@ import {
   notification
 } from "antd";
 import { Link, useNavigate } from "react-router-dom";
-import { ArrowRightOutlined } from "@ant-design/icons";
 import { loginAPI } from "../../services/api.service";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../components/context/auth.context";
@@ -49,7 +48,7 @@ const LoginPage = () => {
             borderRadius: "5px"
           }}
         >
-          <legend>Dang nhap</legend>
+          <legend style={{ textAlign: "center" }}>ANTIN CENIMA</legend>
           <Form form={form} layout="vertical" onFinish={onFinish}>
             <Form.Item
               label="Email"
@@ -87,9 +86,7 @@ const LoginPage = () => {
             <Form.Item>
               <div
                 style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center"
+                  textAlign: "center"
                 }}
               >
                 <Button
@@ -99,15 +96,12 @@ const LoginPage = () => {
                 >
                   Login
                 </Button>
-                <Link to="/">
-                  Go to homepage <ArrowRightOutlined />
-                </Link>
               </div>
             </Form.Item>
           </Form>
           <Divider />
           <div style={{ textAlign: "center" }}>
-            chua co tai khoan? <Link to={"/register"}>dang ky tai day</Link>
+            Do not have an account? <Link to={"/register"}>Register</Link>
           </div>
         </fieldset>
       </Col>

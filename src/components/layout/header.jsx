@@ -51,7 +51,7 @@ const Header = () => {
     },
     {
       label: (
-        <Link style={{ textDecoration: "none" }} to={"/lich-chieu"}>
+        <Link style={{ textDecoration: "none" }} to={"/lich-chieu-phim"}>
           LỊCH CHIẾU
         </Link>
       ),

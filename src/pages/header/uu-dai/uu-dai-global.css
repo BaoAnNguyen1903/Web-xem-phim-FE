@@ -35,6 +35,22 @@
     margin-bottom: 10px;
 }
 
+/* không thấy viền mờ của card */
+.ant-card {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .uudai-container a {
+    text-decoration: none !important; /* Xóa gạch chân */
+    color: inherit; /* Giữ màu sắc gốc */
+  }
+  
+  .uudai-container a:hover {
+    text-decoration: none !important; /* Đảm bảo không gạch chân khi hover */
+  }
+  
+
 
 
   
