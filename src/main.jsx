@@ -22,6 +22,7 @@ import QuyDinhRapPhim from "./pages/header/tin-tuc-phim/quyDinhRapPhim";
 import TaiKhoan from "./pages/header/thanh-vien/taiKhoan";
 import QuyenLoi from "./pages/header/thanh-vien/quyenLoi";
 import KhuyenMaiU22 from "./pages/header/uu-dai/khuyenMaiU22";
+import HomePage from "./pages/home";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div>home page child</div>,
+        element: <HomePage />,
         errorElement: <ErrorPage />
       },
       {
