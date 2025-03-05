@@ -68,13 +68,13 @@ const registerUserAPI = (fullName, email, password, phone) => {
 }
 
 const loginAPI = (username, password) => {
-    const URL_BACKEND = "/api/v1/auth/login";
+    // const URL_BACKEND = "/api/v1/auth/login";
         const data = {
             username: username,
             password: password,
             delay: 5000
         }
-        return axios.post(URL_BACKEND, data)
+        return axios.post("http://localhost:8080/api/v1/auth/login", data)
 }
 
 const getAccountAPI = () => {
