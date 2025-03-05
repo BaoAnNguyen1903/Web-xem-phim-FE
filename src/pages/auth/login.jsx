@@ -22,7 +22,7 @@ const LoginPage = () => {
 
   const onFinish = async (values) => {
     setLoading(true); // để cho nó xoayxoay
-    const res = await loginAPI(values.email, values.password);
+    const res = await loginAPI(values.username, values.password);
     if (res.data) {
       message.success("login success");
       localStorage.setItem("access_token", res.data.access_token);
@@ -51,16 +51,12 @@ const LoginPage = () => {
           <legend style={{ textAlign: "center" }}>ANTIN CENIMA</legend>
           <Form form={form} layout="vertical" onFinish={onFinish}>
             <Form.Item
-              label="Email"
-              name="email"
+              label="Username"
+              name="username"
               rules={[
                 {
                   required: true,
-                  message: "Email khong duoc de trong!"
-                },
-                {
-                  type: "email",
-                  message: "Email khong dung dinh dang"
+                  message: "Username khong duoc de trong!"
                 }
               ]}
             >
