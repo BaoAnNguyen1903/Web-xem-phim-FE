@@ -71,7 +71,7 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
       },
       {
-        path: "/xem-phim-metiz-thoa-thich-cung-uu-dai-sieu-hoi-tu-vnpay-qr",
+        path: "/xem-phim-antin-thoa-thich-cung-uu-dai-sieu-hoi-tu-vnpay-qr",
         element: <UuDaiVNPayQr />,
         errorElement: <ErrorPage />
       },

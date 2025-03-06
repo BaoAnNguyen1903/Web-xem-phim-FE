@@ -12,19 +12,19 @@ const uuDaiData = [
     title: "QUÀ TẶNG SINH NHẬT THÀNH VIÊN",
     date: "01/01/2024 - 31/12/2024",
     image: "/images/img-sinh-nhat.png",
-    link: "/uu-dai/qua-sinh-nhat"
+    link: "/qua-tang-sinh-nhat-thanh-vien"
   },
   {
     title: "XEM PHIM CÙNG VNPAY - GIẢM ĐẾN 15K",
     date: "13/09/2023 - 31/10/2023",
     image: "/images/img-vnpay.png",
-    link: "/uu-dai/vnpay"
+    link: "/xem-phim-antin-thoa-thich-cung-uu-dai-sieu-hoi-tu-vnpay-qr"
   },
   {
     title: "SUPER MONDAY (THỨ HAI SIÊU HẠNG)",
     date: "13/09/2023 - 31/10/2023",
     image: "/images/img-super-monday.png",
-    link: "/uu-dai/vnpay"
+    link: "/super-monday-thu-hai-sieu-hang"
   }
 ];
 

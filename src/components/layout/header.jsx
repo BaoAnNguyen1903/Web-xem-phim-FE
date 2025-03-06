@@ -23,12 +23,18 @@ const Header = () => {
     if (res.data) {
       localStorage.removeItem("access_token");
       setUser({
-        email: "",
+        id: "",
+        name: "",
+        dob: "",
+        gender: "",
         phone: "",
-        fullName: "",
-        role: "",
+        email: "",
+        username: "",
+        password: "",
         avatar: "",
-        id: ""
+        points: "",
+        status: "",
+        role: ""
       });
       message.success("logout thanh cong");
       navigate("/");

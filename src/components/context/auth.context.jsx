@@ -1,22 +1,34 @@
 import { createContext, useState } from "react";
 
 export const AuthContext = createContext({
-  email: "",
+  id: "",
+  name: "",
+  dob: "",
+  gender: "",
   phone: "",
-  fullName: "",
-  role: "",
+  email: "",
+  username: "",
+  password: "",
   avatar: "",
-  id: ""
+  points: "",
+  status: "",
+  role: ""
 });
 
 export const AuthWrapper = (props) => {
   const [user, setUser] = useState({
-    email: "",
+    id: "",
+    name: "",
+    dob: "",
+    gender: "",
     phone: "",
-    fullName: "",
-    role: "",
+    email: "",
+    username: "",
+    password: "",
     avatar: "",
-    id: ""
+    points: "",
+    status: "",
+    role: ""
   });
 
   const [isAppLoading, setIsAppLoading] = useState(true);
